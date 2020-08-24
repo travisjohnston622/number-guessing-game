@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Guess A Number!</title>
+  <script src="vendors/jquery.min.js"></script>
+  <script src="scripts/client.js"></script>
+  <link rel="stylesheet" href="vendors/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+      <h1 class="navbar-brand">YOUR GAME HERE!</h1>
+    </div>
+
+    <!-- TODO: NEED form for 4 players -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Choose a number between 1 and 25</p>
+        </div>
+      </div>
+      
+      <form id="jsGuessForm" class="row">
+        <div class="col-12">
+          <div class="input-group mb-3">
+            <label class="input-group-prepend">
+              <span class="input-group-text" id="player1">Myron's Guess</span>
+            </label>
+            <input
+              type="number"
+              placeholder="Choose wisely"
+              class="js-myron-guess form-control"
+              aria-label="Player1 Guess"
+              aria-describedby="player1"
+            />
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="input-group mb-3">
+            <label class="input-group-prepend">
+              <span class="input-group-text" id="player2">Ryan's Guess</span>
+            </label>
+            <input
+              type="number"
+              placeholder="Choose wisely"
+              class="js-ryan-guess form-control"
+              aria-label="Player2 Guess"
+              aria-describedby="player2"
+            />
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="input-group mb-3">
+            <label class="input-group-prepend">
+              <span class="input-group-text" id="player3">Shelby's Guess</span>
+            </label>
+            <input
+              type="number"
+              placeholder="Choose wisely"
+              class="js-shelby-guess form-control"
+              aria-label="Player3 Guess"
+              aria-describedby="player3"
+            />
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="input-group mb-3">
+            <label class="input-group-prepend">
+              <span class="input-group-text" id="player4">Ashleigh's Guess</span>
+            </label>
+            <input
+              type="number"
+              placeholder="Choose wisely"
+              class="js-ashleigh-guess form-control"
+              aria-label="Player4 Guess"
+              aria-describedby="player4"
+            />
+          </div>
+        </div>
+
+        <div class="js-form-actions col-12">
+          <button class="btn btn-primary">Submit Guesses</button>
+        </div>
+      </form>
+    </div>
+    <br />
+
+    <!-- TODO: display all guesses history -->
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <h3 class="js-total-rounds">Total Rounds: 0</h3>
+        </div>
+        <div class="col-6">
+          <h4 class="js-total-guesses">Total Guesses: 0</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <h3>Guess History</h3>
+          <div class="js-history">
+            <p>Guess History</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
